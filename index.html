@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo Application</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	</head>
+<body>
+	<div class="left-bar float-left" id="left-bar">
+		<div class="left-header">
+			<span class="left-logo-title">LOGO</span>
+		</div>
+		<div class="left-menu-header" onclick="togglePanelChild('home')">
+			<span>Home</span>
+			<div id="home" class="hidden">
+				<div class="category-header">
+					<span>Home</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('personalTraining')">Personal Training</span>
+			<div id="personalTraining">
+				<div class="category-header">
+					<span>Employee</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+				<div class="category-header">
+					<span>Approver</span>
+					<ul class="left-sub-menu">
+						<li>Pre-clearance Approval</li>
+						<li>Brokerage Account Approval</li>
+					</ul>
+				</div>
+				<div class="category-header">
+					<span>List Management</span>
+					<ul class="left-sub-menu">
+						<li>Restricted List</li>
+						<li>Watch List</li>
+						<li>Excluded List</li>
+						<li>Security Master</li>
+					</ul>
+				</div>
+				<div class="category-header">
+					<span>Reports</span>
+					<ul class="left-sub-menu">
+						<li>Pre-clearance</li>
+						<li>Trade Attempt</li>
+						<li>Front Running Summary</li>
+						<li>Firm Trade</li>
+						<li>Transaction</li>
+						<li>Brokerage Account</li>
+						<li>Statment Receipt</li>
+						<li>Restricted List</li>
+						<li>Watch List</li>
+						<li>Calculated Holdings</li>
+						<li>Holdings</li>
+						<li>Frequently Traded Securities</li>
+						<li>Holding Period</li>
+						<li>Event</li>
+						<li>Insider Trading</li>
+						<li>Exception</li>
+					</ul>
+				</div>
+				<div class="category-header">
+					<span>Admin</span>
+					<ul class="left-sub-menu">
+						<li>Global Settings</li>
+						<li>Entities</li>
+						<li>User Groups</li>
+						<li>Trade Group Settings</li>
+						<li>Pre-Clearance Questions</li>
+						<li>Brokerages</li>
+						<li>User Profile</li>
+						<li>Upload Data</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('caseManagement')">Case Management</span>
+			<div id="caseManagement" class="hidden">
+				<div class="category-header">
+					<span>Case Management</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('affirmations')">Affirmations</span>
+			<div id="affirmations" class="hidden">
+				<div class="category-header">
+					<span>Affirmations</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('gift')">Gift</span>
+			<div id="gift" class="hidden">
+				<div class="category-header">
+					<span>Gift</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('firmTrading')">Firm Trading</span>
+			<div id="firmTrading" class="hidden">
+				<div class="category-header">
+					<span>Firm Tradin</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left-menu-header">
+			<span onclick="togglePanelChild('addLink')">AddLink</span>
+			<div id="addLink" class="hidden">
+				<div class="category-header">
+					<span>AddLink</span>
+					<ul class="left-sub-menu">
+						<li>My Pre-clearances</li>
+						<li>My Brokerage Accounts</li>
+						<li>Restricted Lists</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="main-content float-right" id="main-content">
+		<header>
+			<div class="page-header float-left">
+				<span>Welcome back, Swati</span>
+			</div>
+			<div class="header-links float-right">
+				<span>My profile</span>
+				<span>Help & Support</span>
+				<span>Log Out</span>
+			</div>
+			<div class="clear-both"></div>
+		</header>
+		<div class="last-visit-section">
+			<span class="float-right">
+				Last visit:
+				<span id="date"></span>
+				- ProActive Check
+			</span>
+			<div class="clear-both"></div>
+		</div>
+		<div class="body-title">
+			<span>New Pre-clearance</span>
+		</div>
+		<div class="body-panel">
+			<div class="input-form">
+				<div>
+					<label>Employee:</label>
+					<input type="text" placeholder="Codal, Team">
+				</div>
+				<div>
+					<label>Brokerage Account:</label>
+					<select class="select" type="text">
+						<option>Select</option>
+					</select> 
+				</div>
+				<div>
+					<label>Security Type</label>
+					<select class="select" type="text">
+						<option>Stock</option>
+					</select>
+				</div>
+				<div>
+					<label>Symbol:</label>
+					<input type="text">
+				</div>
+				<div>
+					<label>Description:</label>
+					<input type="text">
+				</div>
+				<div>
+					<label>Action:</label>
+					<select class="select" type="text">
+						<option>Select</option>
+					</select>
+				</div>
+				<div>
+					<label>Requested Quantity:</label>
+					<input type="text">
+				</div>
+				<div>
+					<label>Order Type</label>
+					<select class="select" type="text" >
+						<option>Market</option>
+					</select>
+				</div>
+				<div class="attachments">
+					<span>Attachments</span><br>
+					<div>New</div>
+				</div>
+				<div class="comment-section">
+					<span>Comment</span><br>
+					<textarea></textarea>
+					<div>
+						<button class="float-left">Cancel</button>
+						<button class="float-right submit-button">Submit</button>
+						<button class="float-right">Submit and Add Another</button>
+						<div class="clear-both"></div>
+					</div>
+				</div>
+			</div>
+			<div class="user-detail float-right">
+				<div class="user-detail-section">
+					<span class="left-text">Created By:</span>
+					<span class="float-right">Codal, Team</span>
+				</div>
+				<div class="user-detail-section approver">
+					<span class="left-text">Approver 1:</span>
+					<span class="float-right">Compliance</span>
+				</div>
+			</div>
+			<div class="clear-both"></div>
+		</div>
+	</div>
+	<script>
+		document.getElementById("date").innerHTML = Date();
+		function togglePanelChild(currentId) {
+			var element = document.getElementById(''+currentId);
+			element.classList.toggle("hidden");
+		}
+	</script>
+</body>
+</html>

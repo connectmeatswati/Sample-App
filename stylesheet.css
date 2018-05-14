@@ -1,0 +1,230 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	padding: 15px;
+	color: white;
+	background-color: #005F83;
+}
+.hidden{
+	display: none;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.clear-both{
+	clear: both;
+}
+.left-bar{
+	background-color: #435562;
+	color: white;
+	width: 300px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 10;
+}
+.left-bar-title{
+	text-align: center;
+	display: inline-block;
+}
+.left-header{
+	border-bottom: 1px solid black;
+	padding: 22px;
+}
+.left-logo-title{
+	font-weight: bold;
+	font-size: 50px;
+}
+.left-menu-header{
+	border-bottom: 1px solid #111111;
+}
+.left-menu-header > span{
+	font-weight: bold;
+	font-size: 20px;
+	background-image: url('images/chevron.png');
+	background-position: 250px center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 20px;
+	display: block;
+	cursor: pointer;
+}
+.left-menu-header > span:hover{
+	background-color: #037DAE;
+	background-image: url('images/chevron-hover.png');
+}
+.category-header{
+	padding: 0px 20px 10px 20px;
+	margin-top: 10px;
+}
+
+.category-header > span{
+	font-size: 18px;
+	display: inline-block;
+	color: #98A4AE;
+	font-weight: bold;
+}
+.category-header ul{
+	padding: 5px;
+	margin: 5px;
+}
+.category-header ul li{
+	display: block;
+	padding:5px 5px 5px 10px;
+}
+.main-content{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 300px);
+}
+#main-content{
+	cursor: pointer;
+}
+.page-header span{
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-top: 5px;
+	display: inline-block;
+}
+.header-links span{
+	display: inline-block;
+	padding: 0px 5px;
+}
+.last-visit-section{
+	padding: 10px;
+	background-color: #037DAE;
+	color: white;
+}
+.body-title{
+	padding: 20px;
+	border-bottom: 1px solid #cccccc;
+}
+.body-title span{
+	font-size: 24px;
+}
+.body-panel{
+	background-color: #f8f8f8;
+	padding: 10px;
+}
+.input-form{
+	width: calc(100% - 370px);
+	float: left;
+	border: 1px solid #ccc;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.input-form label{
+	width: 150px;
+	display: inline-block;
+}
+.input-form label,.input-form input,.input-form select{
+	margin: 5px;
+}
+.input-form input,.input-form select{
+	height: 30px;
+	width: 250px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.input-form input{
+	padding-left: 5px;
+}
+.input-form select{
+	background-color: #fff;
+}
+.attachments{
+	padding: 20px 10px 10px 5px;
+	box-sizing: border-box;
+	margin-top: 0px 10px;
+}
+.attachments div{
+	padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50px;
+    text-align: center;
+}
+.comment-section{
+	margin-top: 10px;
+}
+.comment-section textarea{
+	width: 500px;
+	margin-top: 10px;
+	resize: none;
+	height: 50px;
+	border-radius: 3px;
+	border:1px solid #cccccc;
+}
+.comment-section button{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 3px;
+	font-size: 20px;
+}
+.submit-button{
+	background-color: MediumSeaGreen;
+	color: white;
+}
+.user-detail{
+	width: 350px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	background-color: white;
+}
+.user-detail-section{
+	padding: 10px 0px;
+	box-sizing: border-box;
+}
+.user-detail-section.approver{
+	border-top: 1px solid #cccccc;
+}
+@media only screen and (max-width: 500px) {
+    .input-form input,.input-form select{
+    	border:1px solid #cccccc;
+    	width: calc(100% - 20px);
+    }
+    .comment-section textarea{
+    	width: calc(100% - 40px);
+    	border:1px solid #cccccc;
+    	border-radius: 3px;
+    }
+    .left-bar,.right-menu,.header-links,.user-detail{
+    	display: none;
+    }
+}
+@media only screen and (max-width: 1024px) {
+	.main-content,.input-form{
+    	width: 100%;
+    	float: none;
+    }
+    .input-form{
+    	padding: 0px;
+    	margin: 0px;
+    }
+    .input-form input{
+    	border: 1px solid #cccccc;
+    }
+    .input-form input,.input-form label,.input-form select{
+    	margin: 5px 0px 0px 5px;
+    }
+    .comment-section textarea{
+    	width: calc(100% - 40px);
+    	border:1px solid #cccccc;
+    	border-radius: 3px;
+    	margin-left: 15px;
+    }
+    .left-bar,.right-menu,.header-links,.user-detail{
+    	display: none;
+    }
+}
